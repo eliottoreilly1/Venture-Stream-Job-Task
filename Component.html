@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+
+	
+		body
+		{
+			background-color: lightgreen;
+		}
+
+	
+		h1
+		{
+			font-family: Plus Jakarta Sans, Bold;
+			font-size: 32pt;
+			align: left;
+			font-color: black;
+			opacity: 100%;
+		}
+
+
+div.scroll-container 
+	{
+  			background-color: lightgreen;
+  			overflow: auto;
+  			white-space: nowrap;
+  			align: left;
+		}
+
+
+div.scroll-container img 
+{
+  padding: 6px;
+  width: 237px;
+  height: 290px;
+}
+
+
+.img-zoom-container 
+{
+  position: relative;
+}
+
+
+.img-zoom-lens 
+{
+  position: absolute;
+  border: 10px solid black;
+  width: 80px;
+  height: 80px;
+}
+
+
+.img-zoom-result 
+{
+  border: 10px solid black;
+  width: 200px;
+  height: 250px;
+}
+
+	</style>
+
+	<title> Component </title>
+</head>
+
+<body>	
+
+  <h1> Section Title </h1>
+
+ <div class="scroll-container">
+  <img src="Placeholder Image.png" alt="Image 1">
+  <img src="Placeholder Image.png" alt="Image 1">
+  <img src="Placeholder Image@2x.png" alt="Image 2">
+  <img src="Placeholder Image@2x.png" alt="Image 2">
+  <img src="Placeholder Image@3x.png" alt="Image 3">
+  <img src="Placeholder Image@2x.png" alt="Image 2">
+</div>	
+
+<div class="img-zoom-container">
+  <img id="myimage" src="Placeholder Image.png" width="237" height="290" alt="Image">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+
+</body>
+</html> 
